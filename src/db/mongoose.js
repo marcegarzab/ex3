@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 // revisa tu connectionURL aqui :-)
-var connectionURL = 'mongodb+srv://admin:admin@marcelacluster-qiczh.mongodb.net/Exam3?retryWrites=true&w=majority'
+var connectionURL = process.env.connectionURL || require('../config.js').connectionURL
 
 // var connectionURL = '../config.js'
 
